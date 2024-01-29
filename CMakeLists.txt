@@ -13,5 +13,13 @@ target_sources(library_to_fetch
         lib.cppm
 )
 
+add_library(bad_library_to_fetch)
+
+target_sources(bad_library_to_fetch
+        PUBLIC
+        FILE_SET cxx_modules TYPE CXX_MODULES FILES
+        bad_lib.cppm
+)
+
 add_executable(some_test test.cpp)
 target_link_libraries(some_test library_to_fetch)
