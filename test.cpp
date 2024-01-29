@@ -4,5 +4,5 @@ import fetched_lib;
 
 
 int main() {
-    std::cout << fib(2);
+    std::cout << call();
 }
