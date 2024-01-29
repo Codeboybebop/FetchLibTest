@@ -23,4 +23,4 @@ target_sources(bar
 
 
 add_executable(some_test test.cpp)
-target_link_libraries(some_test bar)
+target_link_libraries(some_test foo)
